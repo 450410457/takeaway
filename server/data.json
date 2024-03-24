@@ -1,128 +1,134 @@
 {
   "takeaway": [
     {
-      "tag": "318569657",
-      "name": "一人套餐",
+      "tag": "318569999",
+      "name": "ランチ/Lunch",
       "foods": [
         {
-          "id": 8078956697,
-          "name": "烤羊肉串(10串)",
-          "like_ratio_desc": "好评度100%",
-          "month_saled": 40,
-          "unit": "10串",
-          "food_tag_list": ["点评网友推荐"],
-          "price": 90,
-          "picture": "https://zqran.gitee.io/images/waimai/8078956697.jpg",
+          "id": 318569001,
+          "name": "ワッフルセット",
+          "like_ratio_desc": "好評率：100%",
+          "month_saled": 70,
+          "unit": "1セット",
+          "food_tag_list": [
+            "ネチズンが推奨"
+          ],
+          "price": 900,
+          "picture": "img/318569001.png",
           "description": "",
-          "tag": "318569657"
+          "tag": "318569999"
         },
         {
-          "id": 7384994864,
-          "name": "腊味煲仔饭",
-          "like_ratio_desc": "好评度81%",
-          "month_saled": 100,
-          "unit": "1人份",
+          "id": 318569002,
+          "name": "苺カヌレ",
+          "like_ratio_desc": "好評率：99%",
+          "month_saled": 120,
+          "unit": "1人前",
           "food_tag_list": [],
-          "price": 39,
-          "picture": "https://zqran.gitee.io/images/waimai/7384994864.jpg",
-          "description": "",
-          "tag": "318569657"
+          "price": 500,
+          "picture": "img/318569002.png",
+          "description": "甘酸っぱい、いちごの味がするカヌレ。銅製カヌレ型で焼き上げるので、外側バリっと中はもっちり。",
+          "tag": "318569999"
         },
         {
-          "id": 2305772036,
-          "name": "鸡腿胡萝卜焖饭",
-          "like_ratio_desc": "好评度91%",
+          "id": 318569003,
+          "name": "鉄板焼ビーフバーガー",
+          "like_ratio_desc": "好評率：90%",
           "month_saled": 300,
-          "unit": "1人份",
+          "unit": "1人前",
           "food_tag_list": [],
-          "price": 34.32,
-          "picture": "https://zqran.gitee.io/images/waimai/2305772036.jpg",
-          "description": "主料：大米、鸡腿、菜心、胡萝卜",
-          "tag": "318569657"
+          "price": 1500,
+          "picture": "img/318569003.png",
+          "description": "【シェアOKで大人気！】お値打ちで美味しい神戸牛をお楽しみいただけます。",
+          "tag": "318569999"
         },
         {
-          "id": 2233861812,
-          "name": "小份酸汤莜面鱼鱼+肉夹馍套餐",
-          "like_ratio_desc": "好评度73%",
-          "month_saled": 600,
-          "unit": "1人份",
-          "food_tag_list": ["“口味好,包装很好～点赞”"],
-          "price": 34.32,
-          "picture": "https://zqran.gitee.io/images/waimai/2233861812.jpg",
-          "description": "酸汤莜面鱼鱼，主料：酸汤、莜面 肉夹馍，主料：白皮饼、猪肉",
-          "tag": "318569657"
+          "id": 318569004,
+          "name": "サーモンのグリル",
+          "like_ratio_desc": "好評率：80%",
+          "month_saled": 150,
+          "unit": "1人前",
+          "food_tag_list": [
+            "“味もいいし、見た目もいいですね~”"
+          ],
+          "price": 1600,
+          "picture": "img/318569004.png",
+          "description": "炙ったマヨネーズととろサーモンで美味しくなっています。",
+          "tag": "318569999"
         }
       ]
     },
     {
-      "tag": "82022594",
-      "name": "特色烧烤",
+      "tag": "318569888",
+      "name": "ディナー/Dinner",
       "foods": [
         {
-          "id": 3823780596,
-          "name": "藤椒鸡肉串",
+          "id": 318569005,
+          "name": "明太ソースパスタ",
           "like_ratio_desc": "",
           "month_saled": 200,
-          "unit": "10串",
-          "food_tag_list": ["点评网友推荐"],
-          "price": 6,
-          "picture": "https://zqran.gitee.io/images/waimai/3823780596.jpg",
-          "description": "1串。藤椒味，主料：鸡肉",
-          "tag": "82022594"
+          "unit": "1人前",
+          "food_tag_list": [
+            "ネチズンが推奨"
+          ],
+          "price": 1350,
+          "picture": "img/318569005.png",
+          "description": "ぷちぷち食感の明太ソースと濃厚なクリームチーズ・マヨソースの相性抜群。",
+          "tag": "318569888"
         },
         {
-          "id": 6592009498,
-          "name": "烤羊排",
+          "id": 318569006,
+          "name": "照り焼きパン",
           "like_ratio_desc": "",
           "month_saled": 50,
-          "unit": "1人份",
+          "unit": "2人前",
           "food_tag_list": [],
-          "price": 169,
-          "picture": "https://zqran.gitee.io/images/waimai/6592009498.jpg",
-          "description": "6-8个月草原羔羊肋排，烤到皮脆肉香",
-          "tag": "82022594"
+          "price": 700,
+          "picture": "img/318569006.png",
+          "description": "看板メニュー！ハンバーガーを超えました。",
+          "tag": "318569888"
         }
       ]
     },
     {
-      "tag": "98147100",
-      "name": "杂粮主食",
+      "tag": "318569777",
+      "name": "ドリンク/Drink",
       "foods": [
         {
-          "id": 4056954171,
-          "name": "五常稻花香米饭",
+          "id": 318569007,
+          "name": "コーヒー",
           "like_ratio_desc": "",
           "month_saled": 1000,
-          "unit": "约300克",
+          "unit": "1人前",
           "food_tag_list": [],
-          "price": 5,
-          "picture": "https://zqran.gitee.io/images/waimai/4056954171.jpg",
-          "description": "浓浓的稻米清香，软糯Q弹有嚼劲",
-          "tag": "98147100"
+          "price": 500,
+          "picture": "img/318569007.png",
+          "description": "炭火珈琲の深い味わいとミルクの絶妙なコーヒー",
+          "tag": "318569777"
         },
         {
-          "id": 740430262,
-          "name": "小米发糕(3个)",
-          "like_ratio_desc": "好评度100%",
+          "id": 318569008,
+          "name": "苺ミルク",
+          "like_ratio_desc": "好評率：100%",
           "month_saled": 100,
-          "unit": "3块",
+          "unit": "1人前",
           "food_tag_list": [],
-          "price": 13,
-          "picture": "https://zqran.gitee.io/images/waimai/740430262.jpg",
-          "description": "柔软蓬松，葡萄干和蔓越莓酸甜适口",
-          "tag": "98147100"
+          "price": 1300,
+          "picture": "img/318569008.png",
+          "description": "苺の果肉が入った優しい甘みにみるくをプラス。ナタデココ入り。",
+          "tag": "318569777"
         },
         {
-          "id": 7466390504,
-          "name": "沙枣玉米窝头(3个)",
-          "like_ratio_desc": "好评度100%",
-          "month_saled": 100,
-          "unit": "3个",
+          "id": 318569009,
+          "name": "苺とドーナツセット",
+          "like_ratio_desc": "好評率：100%",
+          "month_saled": 120,
+          "unit": "1人前",
           "food_tag_list": [],
-          "price": 13,
-          "picture": "https://zqran.gitee.io/images/waimai/7466390504.jpg",
-          "description": "",
-          "tag": "98147100"
+          "price": 1300,
+          "picture": "img/318569009.png",
+          "description": "ラズベリーとホワイトチョコの魅惑的な味わいにハートを加えて",
+          "tag": "318569777"
         }
       ]
     }

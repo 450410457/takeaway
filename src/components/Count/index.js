@@ -1,5 +1,6 @@
 import './index.scss'
 
+// Conut
 const Count = ({ onPlus, onMinus, count }) => {
   return (
     <div className="goods-count">

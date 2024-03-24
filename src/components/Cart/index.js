@@ -1,52 +1,67 @@
 import classNames from 'classnames'
 import Count from '../Count'
 import './index.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import { decreCount, increCount, cleraCart } from '../../store/modules/takeaway'
+import { useState } from 'react'
 
 const Cart = () => {
-  const cart = []
+  const { cartList } = useSelector(state => state.foods)
+  const totalPrice = cartList.reduce((pre, item) => pre + item.price * item.count, 0)
+  const totalCount = cartList.reduce((pre, item) => pre + item.count, 0)
+
+  const dispatch = useDispatch()
+  // カートの表示/非表示を制御する
+  const [visible, setVisible] = useState(false)
+  const onShow = () => {
+    if (cartList.length > 0) {
+      setVisible(!visible)
+    }
+  }
   return (
     <div className="cartContainer">
-      {/* 遮罩层 添加visible类名可以显示出来 */}
+      {/* マスクレイヤーは、可視のクラス名(visible)を追加することで表示できます */}
       <div
-        className={classNames('cartOverlay')}
+        className={classNames('cartOverlay', visible && 'visible')}
+        onClick={() => { setVisible(false) }}
       />
-      <div className="cart">
-        {/* fill 添加fill类名可以切换购物车状态*/}
-        {/* 购物车数量 */}
-        <div className={classNames('icon')}>
-          {true && <div className="cartCornerMark">{0}</div>}
+      <div className="cart" onClick={onShow}>
+        {/* クラス名(fill)より、カートのステータスを切り替えます*/}
+        {/* カート内の商品の数 */}
+        <div className={classNames('icon', { fill: cartList.length > 0 })}>
+          {cartList.length > 0 && <div className="cartCornerMark">{totalCount}</div>}
         </div>
-        {/* 购物车价格 */}
+        {/* カート内の商品の合計金額 */}
         <div className="main">
           <div className="price">
             <span className="payableAmount">
               <span className="payableAmountUnit">¥</span>
-              {0.00}
+              {totalPrice && totalPrice.toFixed(2)}
             </span>
           </div>
-          <span className="text">预估另需配送费 ¥5</span>
+          <span className="text">配送料金 500円</span>
         </div>
-        {/* 结算 or 起送 */}
-        {false ? (
-          <div className="goToPreview">去结算</div>
+        {/* 商品の数より、表示文言が違う：0件 or 0件以外 */}
+        {cartList.length > 0 ? (
+          <div className="goToPreview">カートを表示</div>
         ) : (
-          <div className="minFee">¥20起送</div>
+          <div className="minFee">注文してください</div>
         )}
       </div>
-      {/* 添加visible类名 div会显示出来 */}
-      <div className={classNames('cartPanel')}>
+      {/* divは、可視のクラス名(visible)を追加することで表示できます */}
+      <div className={classNames('cartPanel', visible && 'visible')}>
         <div className="header">
-          <span className="text">购物车</span>
-          <span className="clearCart">
-            清空购物车
+          <span className="text">カート</span>
+          <span className="clearCart" onClick={() => { dispatch(cleraCart()) }}>
+            カートを空にする
           </span>
         </div>
 
-        {/* 购物车列表 */}
+        {/* カート一覧 */}
         <div className="scrollArea">
-          {cart.map(item => {
+          {cartList.map(item => {
             return (
-              <div className="cartItem" key={item.id}>
+              <div className={classNames(item.count > 0 ? "cartItemVisible" : "cartItemDisvisible")} key={item.id} >
                 <img className="shopPic" src={item.picture} alt="" />
                 <div className="main">
                   <div className="skuInfo">
@@ -60,6 +75,8 @@ const Cart = () => {
                 <div className="skuBtnWrapper btnGroup">
                   <Count
                     count={item.count}
+                    onPlus={() => { dispatch(increCount({ id: item.id })) }}
+                    onMinus={() => { dispatch(decreCount({ id: item.id })) }}
                   />
                 </div>
               </div>
@@ -67,7 +84,7 @@ const Cart = () => {
           })}
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
